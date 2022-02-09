@@ -2,6 +2,7 @@
 
 <head>
     <title>Form Page</title>
+    <link rel="stylesheet" href="./css/style.css">
     <style>
         input[type="submit"] {
             background-color: turquoise;
@@ -22,8 +23,8 @@
 
 <body>
     <h1>Application Form</h1>
-    <form action="new.html" method="GET">
-        <input type="text" placeholder="Enter your fullname" name="fullname" /><br/>
+    <form action="new.html" method="GET" autocomplete="on">
+        <input type="text" placeholder="Enter your fullname" name="fullname" autofocus/><br/>
         <input type="email" placeholder="Enter your email address" name="email_address" /><br/>
         <input type="number" placeholder="Enter your number" name="phone" min="9800000000" max="9899999999" /><br/>
         <input type="password" placeholder="Enter Password" name="password_text" /><br/>
@@ -58,6 +59,23 @@
 
         <label>Please upload your photo</label>
         <input type="file" name="profile"><br/><br/>
+
+        <label>Please upload images list</label>
+        <input type="file" name="profile" multiple><br/><br/>
+
+        <input type="text" name="disabled_text" placeholder="Street" disabled/><br/><br/>
+
+        <input type="text" name="number_text" size="10" /><br/><br/>
+
+        <input type="text" name="transaction_pin" size="30" placeholder="Trans Pin (4 character size)" maxlength="4" /><br/><br/>
+
+        <input type="text" name="phone_number_alt" size="30" placeholder="Your 10 digit phone number" maxlength="10" /><br/><br/>
+
+        <input type="date" name="statement_date" min="2022-01-01" max="2022-02-09" /><br/><br/>
+
+        <input type="text" name="country_code" pattern="[A-Za-z]{3}" placeholder="Country Code (3 Digit)" /><br/><br/>
+
+        <input type="text" name="email_alt" pattern="[A-Za-z]@[A-Za-z]" placeholder="Email with Pattern" /><br/><br/>
 
         <!-- <input type="button" name="btn" value="Click Here"><br/> -->
 
