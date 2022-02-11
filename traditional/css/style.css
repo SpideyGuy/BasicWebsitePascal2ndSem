@@ -1,7 +1,12 @@
+@font-face {
+    font-family: shizuruFont;
+    src: url(../font/Shizuru-Regular.ttf);
+}
+
 body {
     /* background-image: url("../img/pattern.jpg");
     background-repeat: no-repeat; */
-    padding: 52px;
+    padding: 12px 52px;
 }
 
 h1 {
@@ -53,11 +58,12 @@ h1 {
     padding: 24px;
     border: 1px solid red;
     margin-top: 28px;
+    text-align: center;
 }
 
 .general-div h2 {
     text-align: center;
-    /* text-shadow: 2px 2px 5px red; */
+    text-shadow: 2px 2px 5px red;
 }
 
 .general-div p {
@@ -68,4 +74,22 @@ h1 {
     line-height: 32px;
     text-align: center;
     /* letter-spacing: 8px; */
+    /* font-family: 'shizuruFont'; */
+    /* font-family: 'Shizuru', cursive; */
+}
+
+.general-div .share-btn {
+    background-color: brown;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 12px;
+}
+
+.general-div img {
+    height: 172px;
+}
+
+.general-div i {
+    font-size: 172px;
 }

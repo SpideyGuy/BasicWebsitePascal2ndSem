@@ -1,0 +1,85 @@
+<html>
+
+<head>
+    <title>Demo Webpage</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+        }
+        
+        .main-div {
+            padding: 12px 52px;
+            position: fixed;
+        }
+        
+        .main-div ul {
+            display: flex;
+        }
+        
+        .main-div ul li {
+            list-style-type: none;
+            font-size: 28px;
+            font-family: 'shizuruFont';
+            margin: 4px 24px;
+            color: brown;
+        }
+        
+        .main-div ul li a {
+            text-decoration: none;
+            color: unset;
+        }
+        
+        .main-div ul li a:hover {
+            color: cadetblue;
+        }
+        
+        .main-div ul li:last-child {
+            background-color: brown;
+            color: white;
+            /* font-family: unset; */
+            padding: 4px 12px;
+            font-size: 18px;
+            border-radius: 12px;
+        }
+        
+        .main-div {
+            display: flex;
+        }
+        
+        .logo-container img {
+            height: 80px;
+            padding-top: 6px;
+        }
+        
+        .slider-div img {
+            width: 100%;
+            /* height: 520px; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-div">
+        <div class="logo-container">
+            <img src="./img/logo.png" />
+        </div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Education</a></li>
+            <li><a href="#">Experience</a></li>
+            <li><a href="#">Skills</a></li>
+            <li><a href="#">Contact Me</a></li>
+            <li><a href="#">Download CV</a></li>
+        </ul>
+    </div>
+    <div class="slider-div" style="margin: 0px 0px;">
+        <img src="./img/hero.jpg" />
+    </div>
+    <div class="education-div">
+    </div>
+    <div class="experience-div"></div>
+</body>
+
+</html>
