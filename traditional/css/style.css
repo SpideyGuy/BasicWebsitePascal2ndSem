@@ -1,4 +1,9 @@
 @font-face {
+    font-family: meroFont;
+    src: url(../font/Ananda\ 5\ Regular.otf);
+}
+
+@font-face {
     font-family: shizuruFont;
     src: url(../font/Shizuru-Regular.ttf);
 }
@@ -9,12 +14,13 @@ body {
     padding: 12px 52px;
 }
 
-h1 {
+
+/* h1 {
     color: crimson;
     font-weight: normal;
     padding: 12px;
     border: 2px dashed blue;
-}
+} */
 
 .general-heading {
     color: tomato;
@@ -64,6 +70,7 @@ h1 {
 .general-div h2 {
     text-align: center;
     text-shadow: 2px 2px 5px red;
+    font-family: 'shizuruFont';
 }
 
 .general-div p {
@@ -74,7 +81,7 @@ h1 {
     line-height: 32px;
     text-align: center;
     /* letter-spacing: 8px; */
-    /* font-family: 'shizuruFont'; */
+    font-family: 'meroFont';
     /* font-family: 'Shizuru', cursive; */
 }
 
@@ -92,4 +99,93 @@ h1 {
 
 .general-div i {
     font-size: 172px;
+}
+
+.table-div {
+    /* font-family: 'shizuruFont'; */
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-div th,
+.table-div td {
+    border: 1px solid #ddd;
+}
+
+.table-div th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: red;
+    color: white;
+    padding-left: 8px;
+}
+
+.table-div tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.table-div tr:nth-child(3) td:nth-child(odd) {
+    background-color: blue;
+}
+
+
+/* .table-div tr:hover {
+    background-color: #ddd;
+} */
+
+.table-div tr:nth-child(2) td:nth-child(3):hover {
+    background-color: red;
+}
+
+.table-div tr:nth-child(3) td:nth-child(3):hover {
+    background-color: green;
+}
+
+.table-div tr:nth-child(4) td:nth-child(3):hover {
+    background-color: blue;
+}
+
+
+/* Personal Profile */
+
+.personal-profile {
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 16px;
+    padding: 48px;
+    width: 60%;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.personal-profile:hover {
+    box-shadow: 6px 10px 10px rgb(0 0 0 / 40%);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.personal-profile img {
+    border-radius: 50%;
+    height: 120px;
+    border: 1px dashed red;
+}
+
+.personal-profile table {
+    border-collapse: collapse;
+    margin: auto;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.personal-profile table td {
+    border: 1px solid #acacac;
+    font-size: 18px;
+    padding: 12px;
+}
+
+.personal-profile a {
+    background-color: #0182dd;
+    text-decoration: none;
+    padding: 8px 20px;
+    color: white;
+    border-radius: 42px;
 }
