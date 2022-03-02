@@ -1,0 +1,100 @@
+<html>
+
+<head>
+    <title>Animations</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+        .personal-profile {
+            margin-bottom: 80px;
+        }
+        
+        .personal-profile img {
+            height: 320px;
+            border: 18px solid red;
+            transition: 2s;
+            transform: rotate(0deg);
+        }
+        
+        .personal-profile img:hover {
+            height: 320px;
+            animation-name: manu;
+            animation-duration: 6s;
+        }
+        
+        @keyframes manu {
+            0% {
+                border: 18px solid red;
+            }
+            25% {
+                border: 18px solid blue;
+            }
+            50% {
+                border: 18px solid green;
+            }
+            75% {
+                border: 18px solid yellow;
+            }
+            100% {
+                border: 18px solid pink;
+            }
+            /* from {
+                border: 18px solid red;
+                transform: rotate(0deg);
+            }
+            to {
+                border: 18px solid blue;
+                transform: rotate(360deg);
+            } */
+        }
+        
+        .animate-div {
+            width: 200px;
+            height: 200px;
+            border-radius: 100px;
+            background: red;
+            animation-name: ball-animation;
+            position: relative;
+            animation-duration: 4s;
+            animation-iteration-count: 10;
+        }
+        
+        @keyframes ball-animation {
+            0% {
+                background-color: red;
+                left: 0px;
+                top: 0px;
+            }
+            25% {
+                background-color: blue;
+                left: 800px;
+                top: 0px;
+            }
+            50% {
+                background-color: green;
+                left: 800px;
+                top: 800px;
+            }
+            75% {
+                background-color: yellow;
+                left: 0px;
+                top: 800px;
+            }
+            100% {
+                background-color: red;
+                left: 0px;
+                top: 0px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div class="personal-profile">
+        <img id="scale-img" src="img/ronaldo.png">
+    </div> -->
+    <div class="animate-div">
+
+    </div>
+</body>
+
+</html>
