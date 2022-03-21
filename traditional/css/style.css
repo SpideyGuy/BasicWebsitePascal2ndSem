@@ -189,3 +189,63 @@ body {
     color: white;
     border-radius: 42px;
 }
+
+
+/* Styling for Skill Block */
+
+.skill-container .skill-header {
+    text-align: center;
+}
+
+.skill-container .skill-wrapper {
+    margin-top: 48px;
+}
+
+.skill-container .skill-block {
+    margin: 12px 0;
+}
+
+.skill-container .skill-block div:first-child {
+    width: 20%;
+}
+
+.skill-container .skill-block div:nth-child(2) {
+    width: 40%;
+}
+
+.skill-container .skill-block div:nth-child(3) {
+    width: 80%;
+}
+
+.skill-container #sing-progress {
+    width: 100%;
+    background-color: #ddd;
+}
+
+.skill-container #sing-progress-bar {
+    width: 20%;
+    height: 32px;
+    background-color: green;
+}
+
+.skill-container #dance-progress {
+    width: 100%;
+    background-color: #ddd;
+}
+
+.skill-container #dance-progress-bar {
+    width: 40%;
+    height: 32px;
+    background-color: red;
+}
+
+.skill-container #pubg-progress {
+    width: 100%;
+    background-color: #ddd;
+}
+
+.skill-container #pubg-progress-bar {
+    width: 80%;
+    height: 32px;
+    background-color: blue;
+}

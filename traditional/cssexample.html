@@ -68,7 +68,55 @@
         
         #scale-img:hover {
             transform: scale(1.2);
+        }
+        
+        .personal-profile a {
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        
+        .personal-profile a:hover {
+            background: white;
+            border: 2px dashed #0182dd;
+            color: #0182dd;
+            box-shadow: unset;
             transition: 2s;
+        }
+        
+        .game-container button {
+            background-color: #4CAF50;
+            font-size: 24px;
+            padding: 12px 24px;
+            text-align: center;
+            color: white;
+            border: none;
+            border-radius: 16px;
+            box-shadow: 0 9px #999;
+            text-transform: uppercase;
+            font-weight: 500;
+            font-family: fantasy;
+            cursor: pointer;
+        }
+        
+        .game-container button:hover {
+            background-color: #3e8e41;
+        }
+        
+        .game-container button:active {
+            background-color: #3e8e41;
+            box-shadow: 0 5px #666;
+            transform: translateY(4px);
+        }
+        
+        .game-container .button-cancel-game {
+            background-color: #FF6347;
+        }
+        
+        .game-container .button-cancel-game:hover {
+            background-color: #FF0000;
+        }
+        
+        .game-container .button-cancel-game:active {
+            background-color: #FF0000;
         }
     </style>
 </head>
@@ -79,59 +127,32 @@ external -> in different file but connected in head section -->
 
 <body>
 
+    <div class="game-container">
+        <button class="button-play-game">Press to play</button>
+        <button class="button-cancel-game">Press to cancel</button>
+    </div>
 
-    <!-- <table class="table-div">
-        <tr>
-            <th>S.N</th>
-            <th>Name</th>
-            <th>Color</th>
-        </tr>
-        <tr>
-            <td>1</td>
-            <td>Ramesh Yadav</td>
-            <td>Red</td>
-        </tr>
-        <tr>
-            <td>2</td>
-            <td>Sita Karki</td>
-            <td>Green</td>
-        </tr>
-        <tr>
-            <td>3</td>
-            <td>Ram Shrestha</td>
-            <td>Blue</td>
-        </tr>
-    </table> -->
-
-    <div class="personal-profile">
-        <img id="scale-img" src="img/ronaldo.png">
-        <table>
-            <tr>
-                <td>Name:</td>
-                <td>Cristiano Ronaldo</td>
-            </tr>
-            <tr>
-                <td>Address:</td>
-                <td>Bhaktapur, Nepal</td>
-            </tr>
-            <tr>
-                <td>Education:</td>
-                <td>BCA (2nd Semester)</td>
-            </tr>
-            <tr>
-                <td>Skill:</td>
-                <td>HTML, CSS, Football</td>
-            </tr>
-            <tr>
-                <td>Other Details:</td>
-                <td>I like to play football and I play football for Manchester United.</td>
-            </tr>
-        </table>
-        <div id="animation-btn-div">
-            <p>Animation</p>
+    <div class="skill-container">
+        <div class="skill-header">
+            <h1>Skill</h1>
         </div>
-        <a href="mailto:bijayraizn@gmail.com">Email Me</a>
-        <a href="tel:9841302705">9841302705</a>
+        <div class="skill-wrapper">
+            <div class="skill-block">
+                <div id="sing-progress">
+                    <div id="sing-progress-bar"></div>
+                </div>
+            </div>
+            <div class="skill-block">
+                <div id="dance-progress">
+                    <div id="dance-progress-bar"></div>
+                </div>
+            </div>
+            <div class="skill-block">
+                <div id="pubg-progress">
+                    <div id="pubg-progress-bar"></div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- <div class="video-container">
@@ -144,6 +165,8 @@ external -> in different file but connected in head section -->
     <!-- <div class="yt-iframe">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/0lLiQZwBzxQ?start=120" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div> -->
+
+    <script src="js/custom.js"></script>
 
 </body>
 
